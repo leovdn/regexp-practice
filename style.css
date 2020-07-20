@@ -14,6 +14,7 @@ form {
     margin: 20vh auto 0 auto;
     padding: 24px 56px 48px 56px;
     border-radius: 16px;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
 }
 
 form h1 {
@@ -34,6 +35,16 @@ form input {
     padding: 12px;
     background: #ecf0f1;
     border: none;
+    transition: 300ms;
+}
+
+form input:hover {
+    background: #bdc1c2;
+}
+
+form input::placeholder {
+    color: #65747162;
+    letter-spacing: 2px;
 }
 
 input#cpf.valido {
@@ -42,8 +53,8 @@ input#cpf.valido {
 }
 
 input#cpf.erro {
-    border: 1px solid tomato;
-    outline: 1px solid tomato;
+    border: 2px solid rgb(238, 123, 123);
+    outline: 2px solid rgb(238, 123, 123);
 }
 
 .erro-text {
@@ -54,6 +65,22 @@ input#cpf.erro {
     display: block;
     text-align: left;
     font-size: .7rem;
-    color: tomato;
+    color: rgb(238, 123, 123);
     font-weight: bold;
+}
+
+button {
+    background: #58af9c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #468a7b;
 }
